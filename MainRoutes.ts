@@ -67,6 +67,7 @@
  router.route('/thejuneshop').get(mainController.thejuneshop);
  router.route('/sanfe').get(mainController.sanfe);
  router.route('/xyxx').get(mainController.xyxx);
+ router.route('/autobot').get(mainController.autobot);
  // Production Pages
  router.route('/prod/anveshan').get(mainController.anveshan_prod);
  router.route('/prod/aadar').get(mainController.aadar_prod);
@@ -111,6 +112,7 @@
  router.route('/prod/thejuneshop').get(mainController.thejuneshop_prod);
  router.route('/prod/sanfe').get(mainController.sanfe_prod);
  router.route('/prod/xyxx').get(mainController.xyxx_prod);
+ router.route('/prod/autobot').get(mainController.autobot_prod);
  
  module.exports = router;
  
