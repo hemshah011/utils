@@ -53,7 +53,6 @@
      thejuneshop: thejuneshop,
      sanfe: sanfe,
      xyxx: xyxx,
-     autobot: autobot,
      //Prod exports
      anveshan_prod : anveshan_prod,
      aadar_prod : aadar_prod,
@@ -100,8 +99,7 @@
      arata_prod: arata_prod,
      thejuneshop_prod: thejuneshop_prod,
      sanfe_prod: sanfe_prod,
-     xyxx_prod: xyxx_prod,
-     autobot_prod: autobot_prod
+     xyxx_prod: xyxx_prod
  };
  
  //==========================================================
@@ -463,12 +461,6 @@
      res.render('company/xyxx.html', {
          user: req.session.user,
          title: 'LimeChat Demo'
-     });
- }
-
- function autobot(req : any, res : any) {
-     res.render('company/autobot.html', {
-         user: req.session.user,
      });
  }
  // Production Exports
