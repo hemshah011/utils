@@ -465,6 +465,12 @@
          title: 'LimeChat Demo'
      });
  }
+
+ function autobot(req : any, res : any) {
+     res.render('company/autobot.html', {
+         user: req.session.user,
+     });
+ }
  // Production Exports
  function aadar_prod(req : any, res : any) {
      res.render('production/aadar.html', {
