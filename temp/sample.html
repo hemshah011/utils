@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LimeChat Demos</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <!--===============================================================================================-->
+    <link rel="icon" type="../image/png" href="../images/icons/logo-icon.svg" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../fonts/themify/themify-icons.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/animate/animate.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/animsition/css/animsition.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/daterangepicker/daterangepicker.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/slick/slick.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/lightbox2/css/lightbox.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../css/util.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <!--===============================================================================================-->
+
+    <!-- Hotjar Tracking Code for https://demo.limechat.ai -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 1905517, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body class="animsition">
+    <!-- Header -->
+    <header>
+      <div class="wrap-menu-header gradient1 trans-0-4">
+        <div class="container h-full">
+          <div class="wrap_header trans-0-3">
+            <div class="logo">
+              <a href="/">
+                <img
+                  src="../images/icons/logo_white.svg"
+                  alt="IMG-LOGO"
+                  data-logofixed="../images/icons/logo_green.svg"
+                />
+              </a>
+            </div>
+            <div class="back">
+              <div class="back-button m-r-50" onclick="window.history.back()">
+                <span class="fa fa-arrow-left m-r-5"></span>Go Back
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Title Page -->
+    <section
+      class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15"
+      style="
+        background: linear-gradient(
+          to right,
+          rgba(117, 205, 111, 1) 0%,
+          rgba(70, 200, 148, 1) 100%
+        );
+      "
+    >
+      <div class="row">
+        <div class="col-md-6 flex-m" style="justify-content: center">
+          <div>
+            <h2 class="tit6 t-center">Try the Demo</h2>
+            <p class="txt13 t-center">(Click on the icon in bottom right)</p>
+          </div>
+        </div>
+
+        <!-- TODO: Replace DummyCompany with company name -->
+        <div class="col-md-6">
+          <div
+            class="
+              item-gallery
+              isotope-item
+              bo-rad-10
+              hov-img-zoom
+              events
+              guests
+            "
+            style="width: 80%"
+          >
+            <img src="../images/company/${COMPANY}/logo.png" alt="IMG-OUR" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section class="bg2-pattern p-t-100 p-b-60 t-center p-l-15 p-r-15">
+      <span class="tit2 t-center"> Introduction </span>
+
+      <!-- TODO: Add Company Name Here -->
+      <h3 class="tit3 t-center m-b-35 m-t-5">{COMPANY}</h3>
+
+      <!-- TODO: Add Company Introduction -->
+      <p class="t-center size32 m-l-r-auto">
+        <strong>From Website : </strong>
+        {COMPANY} Introduction
+      </p>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="bg2-pattern p-t-50 p-b-60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 p-t-45 p-b-30">
+            <div class="wrap-text-delicious t-center">
+              <span class="tit2 t-center"> Fabulous </span>
+
+              <!-- TODO: Add Company Name Here -->
+              <h3 class="tit3 t-center m-b-35 m-t-5">Why {COMPANY} ?</h3>
+
+              <!-- TODO: Add Company Description -->
+              <p class="t-center m-b-22 size3 m-l-r-auto">
+                {COMPANY} Description
+              </p>
+            </div>
+          </div>
+
+          <!-- TODO: Replace DummyCompany with company name -->
+          <div class="col-md-6 p-b-30">
+            <div
+              class="wrap-pic-delicious size2 bo-rad-10 hov-img-zoom m-l-r-auto"
+            >
+              <img src="../images/company/${COMPANY}/pic1.png" alt="IMG-OUR" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Widget Code -->
+    <!-- TODO: Replace with functional script (from LimeChat dashboard)-->
+    <script>
+      (function (d, t) {
+        var BASE_URL = "https://dashboard.limechat.ai";
+        var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        g.src = BASE_URL + "/packs/js/sdk.js";
+        g.defer = true;
+        s.parentNode.insertBefore(g, s);
+        g.onload = function () {
+          window.chatwootSDK.run({
+            websiteToken: "b3fuHo1EoBMXm9rcWGr4WZS",
+            baseUrl: BASE_URL,
+          });
+        };
+      })(document, "script");
+    </script>
+
+    <!-- JavaScript Code DO NOT TOUCH -->
+    <!--===============================================================================================-->
+    <script
+      type="text/javascript"
+      src="../vendor/jquery/jquery-3.2.1.min.js"
+    ></script>
+    <!--===============================================================================================-->
+    <script
+      type="text/javascript"
+      src="../vendor/animsition/js/animsition.min.js"
+    ></script>
+    <!--===============================================================================================-->
+    <script
+      type="text/javascript"
+      src="../vendor/bootstrap/js/popper.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../vendor/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <!--===============================================================================================-->
+    <script
+      type="text/javascript"
+      src="../vendor/select2/select2.min.js"
+    ></script>
+    <!--===============================================================================================-->
+    <script
+      type="text/javascript"
+      src="../vendor/daterangepicker/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../vendor/daterangepicker/daterangepicker.js"
+    ></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="../vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../js/slick-custom.js"></script>
+    <!--===============================================================================================-->
+    <script
+      type="text/javascript"
+      src="../vendor/parallax100/parallax100.js"
+    ></script>
+    <script type="text/javascript">
+      $(".parallax100").parallax100();
+    </script>
+    <!--===============================================================================================-->
+    <script
+      type="text/javascript"
+      src="../vendor/countdowntime/countdowntime.js"
+    ></script>
+    <!--===============================================================================================-->
+    <script
+      type="text/javascript"
+      src="../vendor/lightbox2/js/lightbox.min.js"
+    ></script>
+    <!--===============================================================================================-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
